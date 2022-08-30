@@ -127,9 +127,9 @@ def send_message(to_user, access_token, city_name, weather, max_temperature, min
     # 获取在一起的日期差
     love_days = str(today.__sub__(love_date)).split(" ")[0]
     # 获取中秋节还剩多久
-    maf_year = int(config["maf_birthday"].split("-")[0])
-    maf_month = int(config["love_date"].split("-")[1])
-    maf_day = int(config["love_date"].split("-")[2])
+    maf_year = int(config["Mid_Autumn_Festival"].split("-")[0])
+    maf_month = int(config["Mid_Autumn_Festival"].split("-")[1])
+    maf_day = int(config["Mid_Autumn_Festival"].split("-")[2])
     maf_date = date(maf_year, maf_month, maf_day)
 
     Mid_Autumn_Festival = str(today.__sub__(maf_date)).split(" ")[0]
